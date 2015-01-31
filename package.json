@@ -2,7 +2,7 @@
   "main": "text",
   "name": "system-text",
   "description": "Text plugin for SystemJS.",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
