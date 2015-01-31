@@ -1,4 +1,4 @@
 plugin-text
 ===========
 
-Text plugin
+Text plugin for SystemJS.

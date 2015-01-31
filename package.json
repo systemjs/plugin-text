@@ -1,3 +1,25 @@
 {
-  "main": "text"
+  "main": "text",
+  "name": "system-text",
+  "description": "Text plugin for SystemJS.",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:systemjs/plugin-text.git"
+  },
+  "keywords": [
+    "systemjs",
+    "loader"
+  ],
+  "authors": [
+    "Guy Bedford <guybedford@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/systemjs/plugin-text/issues"
+  },
+  "homepage": "https://github.com/systemjs/plugin-text"
 }
