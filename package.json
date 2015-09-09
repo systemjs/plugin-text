@@ -1,3 +1,5 @@
 {
+  "name": "plugin-text",
+  "version": "0.0.2",
   "main": "text"
 }
