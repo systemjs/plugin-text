@@ -3,6 +3,13 @@ text
 
 SystemJS's text loading plugin. Text is loaded from the file into the variable as a string.
 
+Installation
+---
+
+```bash
+jspm install text
+```
+
 Basic Use
 ---
 
