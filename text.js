@@ -2,6 +2,7 @@
   Text plugin
 */
 exports.translate = function(load) {
+  load.metadata.format = 'amd';
   return 'def' + 'ine(function() {\nreturn "' + load.source
     .replace(/(["\\])/g, '\\$1')
     .replace(/[\f]/g, "\\f")
