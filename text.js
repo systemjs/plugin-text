@@ -18,5 +18,5 @@ exports.translate = function(load) {
   }
 
   load.metadata.format = 'esm';
-  return 'export default "' + source + '";';
+  return 'export default "' + text + '";';
 }
