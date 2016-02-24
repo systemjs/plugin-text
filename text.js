@@ -1,22 +1,14 @@
 /*
   Text plugin
 */
-exports.translate = function(load) {
-  var text = load.source
-    .replace(/(["\\])/g, '\\$1')
-    .replace(/[\f]/g, "\\f")
-    .replace(/[\b]/g, "\\b")
-    .replace(/[\n]/g, "\\n")
-    .replace(/[\t]/g, "\\t")
-    .replace(/[\r]/g, "\\r")
-    .replace(/[\u2028]/g, "\\u2028")
-    .replace(/[\u2029]/g, "\\u2029");
-
-  if(System.transpiler === false) {
+if (typeof window === "undefined") { // If bundling
+  exports.translate = function(load) {
+    var text = JSON.stringify(load.source);
     load.metadata.format = 'amd';
-    return 'def' + 'ine(function() {\nreturn "' + text + '";\n});';
+    return 'def' + 'ine(function() {\nreturn ' + text + ';\n});';
   }
-
-  load.metadata.format = 'esm';
-  return 'export default "' + text + '";';
+} else { // If loading in browser
+  exports.instantiate = function(load) {
+    return load.source;
+  }
 }
