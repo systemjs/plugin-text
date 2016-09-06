@@ -4,7 +4,7 @@
 exports.translate = function(load) {
   if (this.builder && this.transpiler) {
     load.metadata.format = 'esm';
-    return 'exp' + 'ort default ' + JSON.stringify(load.source) + ';';
+    return 'exp' + 'ort var __useDefault = true; exp' + 'ort default ' + JSON.stringify(load.source) + ';';
   }
   
   load.metadata.format = 'amd';
