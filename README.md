@@ -1,3 +1,5 @@
+** Does not currently support SystemJS 1.0+. PR's welcome**
+
 text
 ===========
 
